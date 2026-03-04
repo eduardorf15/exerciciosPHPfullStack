@@ -21,6 +21,8 @@ if(isset($_POST['h1'], $_POST['h2'])){
     echo "<h3>".horarioMaisTarde($_POST['h1'], $_POST['h2'])."</h3>";
 }
 ?>
+
+<button><a href="index.php">Voltar</a></button>
     
 </body>
 </html>

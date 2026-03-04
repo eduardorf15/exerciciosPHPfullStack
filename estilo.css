@@ -1,0 +1,24 @@
+*{
+    background-color: rgba(49, 218, 230, 0.808);
+}
+
+.container{
+    width: auto;
+    height: 59px;
+    background-color: rgba(49, 218, 230, 0.808);
+    }
+
+button{
+    margin-bottom: 15px;
+    margin-left: auto;
+    color: white;
+}
+
+button a{
+    color: white;
+}
+
+body h1{
+    color: white;
+}
+

@@ -22,6 +22,8 @@ if(isset($_POST['numeros'])){
     echo "<h3>".somaAte100($lista)."</h3>";
 }
 ?>
+
+<button><a href="index.php">Voltar</a></button>
     
 </body>
 </html>

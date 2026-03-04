@@ -33,6 +33,8 @@
             }
         ?>
     </form>
+
+    <button><a href="index.php">Voltar</a></button>
         
 </body>
 </html>

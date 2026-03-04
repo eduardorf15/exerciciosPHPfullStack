@@ -22,7 +22,9 @@
         <h1>
             <?php echo $resultado; ?>
         </h1>
-    </form>    
+    </form> 
+    
+    <button><a href="index.php">Voltar</a></button>
 
     
 </body>

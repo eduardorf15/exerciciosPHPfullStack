@@ -23,6 +23,8 @@ if(isset($_POST['num'])){
     echo "<h3>Média: $media</h3>";
 }
 ?>
+
+<button><a href="index.php">Voltar</a></button>
     
 </body>
 </html>

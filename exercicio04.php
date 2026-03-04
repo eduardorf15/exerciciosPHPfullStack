@@ -23,6 +23,8 @@
     <h1>
         <?php echo $resultado;?>
     </h1>
+
+    <button><a href="index.php">Voltar</a></button>
     
 </body>
 </html>
