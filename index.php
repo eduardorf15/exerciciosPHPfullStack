@@ -35,7 +35,7 @@
         <button><a href="exercicio23.php">Exercício 23</a></button>
         <button><a href="exercicio24.php">Exercício 24</a></button>
         <button><a href="exercicio25.php">Exercício 25</a></button>
-        <button>Exercício 26</button>
+        <button><a href="exercicio26.php">Exercício 26</a></button>
         <button>Exercício 27</button>
         <button>Exercício 28</button>
         <button>Exercício 29</button>

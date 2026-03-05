@@ -38,7 +38,7 @@
         }//fim do if  
     }//fim do método
 
-    //1. Verificar se um ano é bissexto.
+    //2. Verificar se um ano é bissexto.
     function bissexto($num1){
         if($num1 % 4 == 0 && $num1 % 100 != 0){
             return "O ano é bissexto!";
@@ -47,7 +47,7 @@
         }
     }//fim do bissexto
 
-    //2.Verificar se um número está entre 100 e 200
+    //3.Verificar se um número está entre 100 e 200
     function verificarNumero($inicio, $fim, $num){
         for($i=$inicio;$i <= $fim;$i++){
             if($i == (int) $num){
@@ -99,7 +99,7 @@
         }//fim do switch
     }//fim do método
 
-    //6. verificar se uma senha digitada é valida.
+    //10. verificar se uma senha digitada é valida.
     function validarSenha($senha){
         $senhaBD = 1234;
         if($senhaBD == $senha){
@@ -182,7 +182,7 @@ function verificarSenha($senha){
 
 }
 
-// 1) Leia dois números e exiba o maior
+// 06) Leia dois números e exiba o maior
 function ex01_maior($a, $b){
     if($a > $b){
         return "Maior: $a";
@@ -193,7 +193,7 @@ function ex01_maior($a, $b){
     }
 }
 
-// 3) Imprima os números de 1 a 100 com para
+// 13) Imprima os números de 1 a 100 com para
 function ex03_1a100(){
     $txt = "";
     for($i = 1; $i <= 100; $i++){
@@ -202,7 +202,7 @@ function ex03_1a100(){
     return $txt;
 }
 
-// 5) múltiplo de 3 e 5 ao mesmo tempo
+// 14) múltiplo de 3 e 5 ao mesmo tempo
 function ex05_mult_3e5($n){
     if(($n % 3 == 0) && ($n % 5 == 0)){
         return "É múltiplo de 3 e 5";
@@ -344,6 +344,292 @@ function ex36_tabuada($n){
 // 40) (mesmo do 12) dia da semana
 function ex40_dia($n){
     return ex12_dia_semana($n);
+}
+
+//4. mostrar pares do vetor
+function mostrarPares($vetor){
+    foreach($vetor as $valor){
+        if($valor % 2 == 0){
+            echo $valor."<br>";
+        }
+    }
+}
+
+
+//7. diagonal principal matriz 3x3
+function diagonalPrincipal($mat){
+    for($i=0;$i<=2;$i++){
+        echo $mat[$i][$i]."<br>";
+    }
+}
+
+
+//8. média das idades
+function mediaIdades($vetor){
+    $soma = 0;
+    $cont = 0;
+
+    foreach($vetor as $idade){
+
+        if($idade < 0){
+            break;
+        }
+
+        $soma = $soma + $idade;
+        $cont++;
+
+    }
+
+    $media = $soma / $cont;
+
+    echo "Média: ".$media;
+}
+
+
+//9. valores acima da média
+function acimaMedia($vetor){
+
+    $soma = 0;
+
+    foreach($vetor as $valor){
+        $soma = $soma + $valor;
+    }
+
+    $media = $soma / 10;
+
+    echo "Acima da média:<br>";
+
+    foreach($vetor as $valor){
+        if($valor > $media){
+            echo $valor."<br>";
+        }
+    }
+}
+
+
+//10. linha maior soma matriz
+function maiorLinha($mat){
+
+    $maior = 0;
+
+    for($i=0;$i<=3;$i++){
+
+        $soma = 0;
+
+        for($j=0;$j<=3;$j++){
+            $soma = $soma + $mat[$i][$j];
+        }
+
+        if($soma > $maior){
+            $maior = $soma;
+        }
+
+    }
+
+    echo "Maior soma linha: ".$maior;
+
+}
+
+
+//16. mostrar matriz
+function mostrarMatriz($mat){
+
+    for($i=0;$i<=4;$i++){
+
+        for($j=0;$j<=4;$j++){
+
+            echo $mat[$i][$j]." ";
+
+        }
+
+        echo "<br>";
+    }
+
+}
+
+
+//17. soma matriz
+function somaMatriz($mat){
+
+    $soma = 0;
+
+    for($i=0;$i<=3;$i++){
+
+        for($j=0;$j<=3;$j++){
+
+            $soma = $soma + $mat[$i][$j];
+
+        }
+
+    }
+
+    echo "Soma: ".$soma;
+
+}
+
+
+//19. valores acima média matriz
+function acimaMediaMatriz($mat){
+
+    $soma = 0;
+    $total = 0;
+
+    for($i=0;$i<=2;$i++){
+        for($j=0;$j<=2;$j++){
+
+            $soma = $soma + $mat[$i][$j];
+            $total++;
+
+        }
+    }
+
+    $media = $soma / $total;
+
+    echo "Acima da média:<br>";
+
+    for($i=0;$i<=2;$i++){
+        for($j=0;$j<=2;$j++){
+
+            if($mat[$i][$j] > $media){
+                echo $mat[$i][$j]."<br>";
+            }
+
+        }
+    }
+
+}
+
+
+//21. contar valores pares matriz
+function contarPares($mat){
+
+    $cont = 0;
+
+    for($i=0;$i<=2;$i++){
+        for($j=0;$j<=2;$j++){
+
+            if($mat[$i][$j] % 2 == 0){
+                $cont++;
+            }
+
+        }
+    }
+
+    echo "Pares: ".$cont;
+
+}
+
+
+//23. contar negativos
+function contarNegativos($vetor){
+
+    $cont = 0;
+
+    foreach($vetor as $valor){
+
+        if($valor < 0){
+            $cont++;
+        }
+
+    }
+
+    echo "Negativos: ".$cont;
+
+}
+
+
+//33. diferença maior menor
+function diferencaMaiorMenor($vetor){
+
+    $maior = $vetor[0];
+    $menor = $vetor[0];
+
+    foreach($vetor as $valor){
+
+        if($valor > $maior){
+            $maior = $valor;
+        }
+
+        if($valor < $menor){
+            $menor = $valor;
+        }
+
+    }
+
+    $dif = $maior - $menor;
+
+    echo "Diferença: ".$dif;
+
+}
+
+
+//35. múltiplos de 5
+function multiplos5($vetor){
+
+    foreach($vetor as $valor){
+
+        if($valor % 5 == 0){
+            echo $valor."<br>";
+        }
+
+    }
+
+}
+
+
+//37. vetor múltiplos de 5
+function vetorMultiplos5(){
+
+    for($i=1;$i<=20;$i++){
+
+        $valor = $i * 5;
+
+        echo $valor."<br>";
+
+    }
+
+}
+
+
+//38. soma matrizes
+function somaMatrizes($mat1,$mat2){
+
+    for($i=0;$i<=2;$i++){
+
+        for($j=0;$j<=2;$j++){
+
+            $soma = $mat1[$i][$j] + $mat2[$i][$j];
+
+            echo $soma." ";
+
+        }
+
+        echo "<br>";
+    }
+
+}
+
+
+//39. maior valor vetor
+function maiorValor($vetor){
+
+    $maior = $vetor[0];
+    $pos = 0;
+
+    for($i=0;$i<=7;$i++){
+
+        if($vetor[$i] > $maior){
+
+            $maior = $vetor[$i];
+            $pos = $i;
+
+        }
+
+    }
+
+    echo "Maior: ".$maior."<br>";
+    echo "Posição: ".$pos;
+
 }
 
 
