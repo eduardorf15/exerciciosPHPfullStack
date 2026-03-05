@@ -3,24 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercício 17</title>
+    <title>Exercicio 18</title>
 </head>
 <body>
 
 <?php include('funcoes.php'); ?>
 
-<h2>Exercício 17 - Produto (1 a 5)</h2>
+<h2>Exercício 18 - Soma de 1 até N</h2>
 <form method="POST">
-<input type="number" name="cod" placeholder="Código 1..5">
-<button type="submit">Mostrar</button>
+    <input type="number" name="n" placeholder="N">
+    <button type="submit">Calcular</button>
 </form>
 
 <?php
-$cod = $_POST['cod'];
-echo "<h3>" . ex13_produto($cod) . "</h3>";
+    $n = $_POST['n'];
+    echo "<h3>" . ex15_soma_1aN($n) . "</h3>";
 ?>
 
 <button><a href="index.php">Voltar</a></button>
-    
+
 </body>
 </html>

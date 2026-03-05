@@ -27,14 +27,14 @@
         <button><a href="exercicio15.php">Exercício 15</a></button>
         <button><a href="exercicio16.php">Exercício 16</a></button>
         <button><a href="exercicio17.php">Exercício 17</a></button>
-        <button>Exercício 18</button>
-        <button>Exercício 19</button>
-        <button>Exercício 20</button>
-        <button>Exercício 21</button>
-        <button>Exercício 22</button>
-        <button>Exercício 23</button>
-        <button>Exercício 24</button>
-        <button>Exercício 25</button>
+        <button><a href="exercicio18.php">Exercício 18</a></button>
+        <button><a href="exercicio19.php">Exercício 19</a></button>
+        <button><a href="exercicio20.php">Exercício 20</a></button>
+        <button><a href="exercicio21.php">Exercício 21</a></button>
+        <button><a href="exercicio22.php">Exercício 22</a></button>
+        <button><a href="exercicio23.php">Exercício 23</a></button>
+        <button><a href="exercicio24.php">Exercício 24</a></button>
+        <button><a href="exercicio25.php">Exercício 25</a></button>
         <button>Exercício 26</button>
         <button>Exercício 27</button>
         <button>Exercício 28</button>

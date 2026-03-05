@@ -1,7 +1,7 @@
 <!DOCTYPE html><html><head><meta charset="UTF-8"><title>Ex01</title></head><body>
 <?php include('funcoes.php'); ?>
 
-<h2>Exercício 01 - Maior de dois números</h2>
+<h2>Exercício 06 - Maior de dois números</h2>
 <form method="POST">
 <input type="number" name="a" placeholder="A">
 <input type="number" name="b" placeholder="B">
